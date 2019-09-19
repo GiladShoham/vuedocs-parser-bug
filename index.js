@@ -7,4 +7,7 @@ const options = {
 
 vuedoc.parse(options)
   .then((component) => console.log(component))
-  .catch((err) => console.error(err))
+  .catch((err) => {
+    console.error('got an error')
+    console.error(err)
+  })
